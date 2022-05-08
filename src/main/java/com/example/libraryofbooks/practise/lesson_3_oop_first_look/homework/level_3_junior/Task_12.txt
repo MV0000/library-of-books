@@ -1,0 +1,32 @@
+Дайте роботу имя! Продолжение.
+
+Тема: объявление конструктора класса.
+
+
+Добавьте в класс javaguru.lv.student_aleksandrs_grigorjevs.the_begining конструктор с параметром String name:
+
+    class javaguru.lv.student_aleksandrs_grigorjevs.the_begining {
+
+        // в этом свойстве наш виртуальный обьект робот будет
+        // запоминать своё имя. Мы используем тип String потому
+        // что имя это строка.
+        String name;
+
+        // Это конструктор класса. У этого конструктора один параметр
+        // с названием name и типом String. Тоесть при создании робота
+        // в его конструктор будут передавать название робота.
+        javaguru.lv.student_aleksandrs_grigorjevs.the_begining(String robotName) {
+            this.name = robotName; // а тут робот запоминает в своем свойстве this.name как его зовут
+        }
+
+    }
+
+В классе RobotDemo передайте в конструктор каждого робота его название:
+
+javaguru.lv.student_aleksandrs_grigorjevs.the_begining robot1 = new javaguru.lv.student_aleksandrs_grigorjevs.the_begining("Rider"); // пусть этого робота зовут "Rider"
+robot1.sayHello();
+robot1.sayYourName();
+
+javaguru.lv.student_aleksandrs_grigorjevs.the_begining robot2 = new javaguru.lv.student_aleksandrs_grigorjevs.the_begining("John"); // а этого робота зовут "John"
+robot2.sayHello();
+robot2.sayYourName();

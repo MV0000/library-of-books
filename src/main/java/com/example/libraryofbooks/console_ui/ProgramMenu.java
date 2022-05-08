@@ -19,7 +19,7 @@ public class ProgramMenu {
 //        menuNumberToUIActionMap.put(1, findUIAction(uiActions, LogInToTheAccountUIAction.class));
 //        menuNumberToUIActionMap.put(2, findUIAction(uiActions, AddNewClientUIAction.class));
 //        menuNumberToUIActionMap.put(3, findUIAction(uiActions, AddNewBookToLibraryUIAction.class));
-//        menuNumberToUIActionMap.put(4, findUIAction(uiActions, AddNewBookToLibraryUIAction.class));
+//        menuNumberToUIActionMap.put(4, findUIAction(uiActions, GetBookFromLibraryUIAction.class));
 //        menuNumberToUIActionMap.put(5, findUIAction(uiActions, DeleteBookFromLibraryUIAction.class));
 //        menuNumberToUIActionMap.put(6, findUIAction(uiActions, FindBookByTitleUIAction.class));
 //        menuNumberToUIActionMap.put(7, findUIAction(uiActions, FindBooksByAuthorUIAction.class));

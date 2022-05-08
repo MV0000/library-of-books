@@ -1,0 +1,11 @@
+Создайте отдельный класс RobotDemo для демонстрации
+работы с классом javaguru.lv.student_aleksandrs_grigorjevs.the_begining.
+
+Внутри класса RobotDemo создайте метод
+
+    public static void main(String[] args) {
+        // создайте экземпляр класса javaguru.lv.student_aleksandrs_grigorjevs.the_begining вызвав конструктор класса
+        // сохраните ссылку (указатель) на только, что созданный
+        // виртуальный обьект класса javaguru.lv.student_aleksandrs_grigorjevs.the_begining в переменную,
+        // она нам понадобиться для дальнейшего использования.
+    }

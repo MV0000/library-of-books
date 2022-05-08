@@ -1,0 +1,8 @@
+   В классе робот (javaguru.lv.student_aleksandrs_grigorjevs.the_begining) создайте конструктор без параметров:
+
+    public javaguru.lv.student_aleksandrs_grigorjevs.the_begining() {
+
+    }
+
+
+
