@@ -30,8 +30,8 @@ public class AddBookUIAction implements UIAction {
         System.out.println("Enter enter release date of the book");
         Long releaseDate = scanner.nextLong();
 
-        AddBookRequest addBooktRequest = new AddBookRequest(bookTitle, bookAuthor, releaseDate);
-        AddBookResponse addBookResponse = addBookService.execute(addBooktRequest);
+        AddBookRequest addBookRequest = new AddBookRequest(bookTitle, bookAuthor, releaseDate);
+        AddBookResponse addBookResponse = addBookService.execute(addBookRequest);
 
         if (addBookResponse.hasErrors()) {
             addBookResponse.getErrors().forEach(coreError ->

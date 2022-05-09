@@ -1,26 +1,22 @@
-package com.example.libraryofbooks.console_ui;
+package library;
 
-import com.example.libraryofbooks.console_ui.account.LogInToTheAccountUIAction;
-import com.example.libraryofbooks.console_ui.book.AddBookUIAction;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
 
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Scanner;
 
-@Component
 public class ProgramMenu {
 
-    private Map<Integer, UIAction> menuNumberToUIActionMap;
+    private Map<Integer, library.UIAction> menuNumberToUIActionMap;
 
-    @Autowired ProgramMenu(List<UIAction> uiActions) {
+    @Autowired ProgramMenu(List<library.UIAction> uiActions) {
 
         menuNumberToUIActionMap = new HashMap<>();
 //        menuNumberToUIActionMap.put(1, findUIAction(uiActions, LogInToTheAccountUIAction.class));
 //        menuNumberToUIActionMap.put(2, findUIAction(uiActions, CreateNewClientUIAction.class));
-        menuNumberToUIActionMap.put(3, findUIAction(uiActions, AddBookUIAction.class));
+        menuNumberToUIActionMap.put(3, findUIAction(uiActions, library.AddBookUIAction.class));
 //        menuNumberToUIActionMap.put(4, findUIAction(uiActions, GetBookFromLibraryUIAction.class));
 //        menuNumberToUIActionMap.put(5, findUIAction(uiActions, DeleteBookFromLibraryUIAction.class));
 //        menuNumberToUIActionMap.put(6, findUIAction(uiActions, FindBookByTitleUIAction.class));
@@ -29,7 +25,7 @@ public class ProgramMenu {
 
     }
 
-    private UIAction findUIAction(List<UIAction> uiActions, Class uiActionClass) {
+    private library.UIAction findUIAction(List<library.UIAction> uiActions, Class uiActionClass) {
         return uiActions.stream()
                 .filter(uiAction -> uiAction.getClass().equals(uiActionClass))
                 .findFirst()
@@ -40,15 +36,12 @@ public class ProgramMenu {
 
         System.out.println("Welcome to the Magnificent Emporium of Extravagant Collection of old and smelly books");
         System.out.println("Menu:");
-        System.out.println("1.  Logg in to the account");
-        System.out.println("2.  Create new client account");
-        System.out.println("3.  Add a book to the library");
-        System.out.println("4.  Take a book out of the library");
-        System.out.println("5.  Delete book from the library");
-        System.out.println("6.  Find book by title");
-        System.out.println("7.  Find books by author");
-        System.out.println("8.  Show all books in the collection");
-        System.out.println("9. Exit");
+        System.out.println("1.  Add a book to the library");
+        System.out.println("2.  Delete book from the library");
+        System.out.println("3.  Find book by title");
+        System.out.println("4.  Find books by author");
+        System.out.println("5.  Show all books in the library");
+        System.out.println("6. Exit");
     }
 
     public int getUserChoice() {
