@@ -1,5 +1,7 @@
 package com.example.libraryofbooks.console_ui;
 
+import com.example.libraryofbooks.console_ui.account.LogInToTheAccountUIAction;
+import com.example.libraryofbooks.console_ui.book.AddBookUIAction;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -16,8 +18,9 @@ public class ProgramMenu {
     @Autowired ProgramMenu(List<UIAction> uiActions) {
 
         menuNumberToUIActionMap = new HashMap<>();
-//        menuNumberToUIActionMap.put(1, findUIAction(uiActions, LogInToTheAccountUIAction.class));
-//        menuNumberToUIActionMap.put(2, findUIAction(uiActions, AddNewClientUIAction.class));
+        menuNumberToUIActionMap.put(1, findUIAction(uiActions, LogInToTheAccountUIAction.class));
+//        menuNumberToUIActionMap.put(2, findUIAction(uiActions, CreateNewClientUIAction.class));
+        menuNumberToUIActionMap.put(3, findUIAction(uiActions, AddBookUIAction.class));
 //        menuNumberToUIActionMap.put(3, findUIAction(uiActions, AddNewBookToLibraryUIAction.class));
 //        menuNumberToUIActionMap.put(4, findUIAction(uiActions, GetBookFromLibraryUIAction.class));
 //        menuNumberToUIActionMap.put(5, findUIAction(uiActions, DeleteBookFromLibraryUIAction.class));

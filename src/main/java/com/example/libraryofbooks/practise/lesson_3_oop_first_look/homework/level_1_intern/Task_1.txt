@@ -1,9 +1,0 @@
-Создайте класс робот (javaguru.lv.student_aleksandrs_grigorjevs.the_begining).
-
-Научите вашего робота "говорить" привет.
-
-Создайте в классе javaguru.lv.student_aleksandrs_grigorjevs.the_begining метод со следующей сигнатурой:
-
-    public void sayHello() {
-        // тут напишите команду распечатки на консоли строки "Hello!"
-    }

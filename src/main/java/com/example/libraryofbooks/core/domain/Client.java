@@ -13,7 +13,7 @@ import javax.persistence.*;
 @AllArgsConstructor
 @Getter
 @Setter
-public class Client extends ClientAccount {
+public class Client extends Account {
 
     @Id
     @Column(name = "clienbtId")
