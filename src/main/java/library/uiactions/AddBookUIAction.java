@@ -1,5 +1,6 @@
-package library;
+package library.uiactions;
 
+import library.Book;
 import library.services.book.AddBookService;
 
 import java.util.Scanner;

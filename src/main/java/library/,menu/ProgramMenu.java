@@ -1,5 +1,6 @@
 package library;
 
+import library.uiactions.AddBookUIAction;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.HashMap;
@@ -14,14 +15,11 @@ public class ProgramMenu {
     @Autowired ProgramMenu(List<library.UIAction> uiActions) {
 
         menuNumberToUIActionMap = new HashMap<>();
-//        menuNumberToUIActionMap.put(1, findUIAction(uiActions, LogInToTheAccountUIAction.class));
-//        menuNumberToUIActionMap.put(2, findUIAction(uiActions, CreateNewClientUIAction.class));
-        menuNumberToUIActionMap.put(3, findUIAction(uiActions, library.AddBookUIAction.class));
-//        menuNumberToUIActionMap.put(4, findUIAction(uiActions, GetBookFromLibraryUIAction.class));
-//        menuNumberToUIActionMap.put(5, findUIAction(uiActions, DeleteBookFromLibraryUIAction.class));
-//        menuNumberToUIActionMap.put(6, findUIAction(uiActions, FindBookByTitleUIAction.class));
-//        menuNumberToUIActionMap.put(7, findUIAction(uiActions, FindBooksByAuthorUIAction.class));
-//        menuNumberToUIActionMap.put(8, findUIAction(uiActions, ShowAllBooksInLibraryUIAction.class));
+        menuNumberToUIActionMap.put(1, findUIAction(uiActions, AddBookUIAction.class));
+//        menuNumberToUIActionMap.put(2, findUIAction(uiActions, DeleteBookFromLibraryUIAction.class));
+//        menuNumberToUIActionMap.put(3, findUIAction(uiActions, FindBookByTitleUIAction.class));
+//        menuNumberToUIActionMap.put(4, findUIAction(uiActions, FindBookByAuthorUIAction.class));
+//        menuNumberToUIActionMap.put(5, findUIAction(uiActions, ShowAllBooksInLibraryUIAction.class));
 
     }
 
